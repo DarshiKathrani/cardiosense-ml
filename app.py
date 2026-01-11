@@ -638,7 +638,7 @@ with tab4:
     try:
         model = pickle.load(open("random_forest_model.pkl", "rb"))
     #     st.success("✅ Model loaded successfully")
-     except:
+    except:
         model = None
         st.error("⚠️ Model file not found. Please ensure random_forest_model.pkl is in the directory.")
 
