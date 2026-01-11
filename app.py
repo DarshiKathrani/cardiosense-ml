@@ -344,19 +344,19 @@ hr {{
 # --------------------------------------------------
 # Header with Theme Toggle in Sidebar
 # --------------------------------------------------
-with st.sidebar:
-    st.markdown("### 🎨 Appearance")
-    theme_option = st.radio(
-        "Theme",
-        ["☀️ Light Mode", "🌙 Dark Mode"],
-        index=1 if st.session_state.dark_mode else 0,
-        label_visibility="collapsed"
-    )
+# with st.sidebar:
+#     st.markdown("### 🎨 Appearance")
+#     theme_option = st.radio(
+#         "Theme",
+#         ["☀️ Light Mode", "🌙 Dark Mode"],
+#         index=1 if st.session_state.dark_mode else 0,
+#         label_visibility="collapsed"
+#     )
     
-    if (theme_option == "🌙 Dark Mode" and not st.session_state.dark_mode) or \
-       (theme_option == "☀️ Light Mode" and st.session_state.dark_mode):
-        st.session_state.dark_mode = not st.session_state.dark_mode
-        st.rerun()
+#     if (theme_option == "🌙 Dark Mode" and not st.session_state.dark_mode) or \
+#        (theme_option == "☀️ Light Mode" and st.session_state.dark_mode):
+#         st.session_state.dark_mode = not st.session_state.dark_mode
+#         st.rerun()
 
 st.markdown(f"""
 <div class="header-container">
